@@ -1,0 +1,20 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Decorative floral accent lines between sections */
+.app > section + section::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-divider),
+    transparent
+  );
+  margin: 0 auto;
+}

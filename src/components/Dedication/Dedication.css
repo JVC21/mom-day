@@ -1,0 +1,110 @@
+.dedication {
+  position: relative;
+  padding: var(--space-2xl) var(--space-lg);
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--color-bg) 0%,
+    var(--color-bg-alt) 50%,
+    var(--color-bg) 100%
+  );
+}
+
+/* Ambient glow */
+.dedication__glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 105, 142, 0.08) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.dedication__content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s var(--ease-out), transform 1s var(--ease-out);
+}
+
+.dedication--visible .dedication__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dedication__icon {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+  animation: float 3s ease-in-out infinite;
+}
+
+.dedication__title {
+  font-family: var(--font-script);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.dedication__divider {
+  width: 0;
+  height: 2px;
+  margin: 0 auto var(--space-lg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-accent-gold),
+    transparent
+  );
+  border-radius: 2px;
+  transition: width 1s var(--ease-out) 0.4s;
+}
+
+.dedication--visible .dedication__divider {
+  width: 100px;
+}
+
+.dedication__text {
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+  line-height: 2;
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.dedication__signature {
+  font-family: var(--font-script);
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+  margin-top: var(--space-lg);
+  line-height: 1.8;
+}
+
+.dedication__heart {
+  display: inline-block;
+  font-size: 2rem;
+  animation: heartbeat 2.5s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dedication {
+    padding: var(--space-xl) var(--space-sm);
+  }
+
+  .dedication__text {
+    font-size: 1.05rem;
+  }
+}
