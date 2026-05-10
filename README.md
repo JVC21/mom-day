@@ -1,12 +1,52 @@
-# React + Vite
+# 💐 Álbum del Día de las Madres
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un hermoso álbum de fotos interactivo y emotivo creado como regalo para el Día de las Madres. Construido con React y Vite, diseñado para ser rápido, hermoso y lleno de amor.
 
-Currently, two official plugins are available:
+## 🌟 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Diseño Premium:** Tipografía elegante (Playfair Display & Dancing Script) y una paleta de colores suave y romántica.
+- **Animaciones Suaves:** Lluvia continua de pétalos cayendo (`PetalRain`), apariciones al hacer scroll y efectos *hover* en las fotos.
+- **Totalmente Responsivo:** Se adapta perfectamente a pantallas de celulares, tablets y computadoras.
+- **Fácil de Personalizar:** Los mensajes, dedicatorias y fotos están centralizados para cambiarlos con facilidad.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React 19](https://react.dev/) - Biblioteca de UI
+- [Vite](https://vitejs.dev/) - Herramienta de construcción (bundler) súper rápida
+- CSS Vanilla - Para animaciones fluidas y variables personalizadas (`CSS Modules`/BEM)
+
+## 📸 Estructura de Datos
+
+Si quieres modificar los mensajes o las fotos, puedes hacerlo fácilmente desde la carpeta de datos. Las imágenes deben colocarse en `src/assets/images/`.
+
+El archivo principal de configuración de las fotos es:
+```
+src/data/albumData.js
+```
+
+El mensaje de dedicación final se edita en:
+```
+src/components/Dedication/Dedication.jsx
+```
+
+## 🚀 Cómo ejecutarlo localmente
+
+1. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+2. **Ejecutar el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+   Esto abrirá la aplicación en tu navegador (generalmente en `http://localhost:5173`).
+
+3. **Construir para producción (Deploy):**
+   ```bash
+   npm run build
+   ```
+   Esto creará una carpeta `dist` que puedes arrastrar a **Netlify** o servir en **GitHub Pages** / **Vercel**.
+
+## ❤️ Dedicatoria
+*Creado con mucho amor por Julio, Guido, Happy y Sparky para Jenny Elizabeth.*
