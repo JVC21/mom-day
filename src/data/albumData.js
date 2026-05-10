@@ -1,8 +1,8 @@
 import {
   mamiYoBebe,
-  mamiNosotrosPequeños,
-  mamiNosotrosPequeños2,
-  mamiCumpleaños,
+  mamiNosotrosPequenos,
+  mamiNosotrosPequenos2,
+  mamiCumpleanos,
   mamiFoto,
   mamiFoto2,
 } from "../assets/images";
@@ -18,7 +18,7 @@ export const albumPhotos = [
   },
   {
     id: 2,
-    src: mamiNosotrosPequeños,
+    src: mamiNosotrosPequenos,
     alt: "Mamá con nosotros de pequeños",
     message:
       "Tu amor siempre ha sido incondicional. Nos diste todo sin pedir nada a cambio, y crecimos rodeados de tu brillo y amor infinito.",
@@ -26,7 +26,7 @@ export const albumPhotos = [
   },
   {
     id: 3,
-    src: mamiNosotrosPequeños2,
+    src: mamiNosotrosPequenos2,
     alt: "Juntos en familia con Happy",
     message:
       "Los mejores recuerdos siempre incluyen tu sonrisa. Cada momento a tu lado es un tesoro que guardamos en el corazón.",
@@ -34,7 +34,7 @@ export const albumPhotos = [
   },
   {
     id: 4,
-    src: mamiCumpleaños,
+    src: mamiCumpleanos,
     alt: "Mami celebrando su cumpleaños",
     message:
       "Cada año que pasa, brillas con más fuerza. Tu sonrisa frente al pastel nos recuerda que la verdadera fiesta es tenerte con nosotros.",
